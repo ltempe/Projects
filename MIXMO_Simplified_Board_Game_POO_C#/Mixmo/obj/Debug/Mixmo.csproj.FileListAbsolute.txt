@@ -1,0 +1,14 @@
+D:\Cours\A2\S3\Algorithmique et POO\Probleme_Final_MIXMO_Louis_TEMPE\Mixmo\bin\Debug\Mixmo.exe.config
+D:\Cours\A2\S3\Algorithmique et POO\Probleme_Final_MIXMO_Louis_TEMPE\Mixmo\bin\Debug\Mixmo.exe
+D:\Cours\A2\S3\Algorithmique et POO\Probleme_Final_MIXMO_Louis_TEMPE\Mixmo\bin\Debug\Mixmo.pdb
+D:\Cours\A2\S3\Algorithmique et POO\Probleme_Final_MIXMO_Louis_TEMPE\Mixmo\obj\Debug\Mixmo.csprojAssemblyReference.cache
+D:\Cours\A2\S3\Algorithmique et POO\Probleme_Final_MIXMO_Louis_TEMPE\Mixmo\obj\Debug\Mixmo.csproj.CoreCompileInputs.cache
+D:\Cours\A2\S3\Algorithmique et POO\Probleme_Final_MIXMO_Louis_TEMPE\Mixmo\obj\Debug\Mixmo.exe
+D:\Cours\A2\S3\Algorithmique et POO\Probleme_Final_MIXMO_Louis_TEMPE\Mixmo\obj\Debug\Mixmo.pdb
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A2\S3\Algorithmique et POO\Probleme_Final_MIXMO_Louis_TEMPE\Mixmo\bin\Debug\Mixmo.exe.config
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A2\S3\Algorithmique et POO\Probleme_Final_MIXMO_Louis_TEMPE\Mixmo\bin\Debug\Mixmo.exe
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A2\S3\Algorithmique et POO\Probleme_Final_MIXMO_Louis_TEMPE\Mixmo\bin\Debug\Mixmo.pdb
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A2\S3\Algorithmique et POO\Probleme_Final_MIXMO_Louis_TEMPE\Mixmo\obj\Debug\Mixmo.exe
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A2\S3\Algorithmique et POO\Probleme_Final_MIXMO_Louis_TEMPE\Mixmo\obj\Debug\Mixmo.pdb
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A2\S3\Algorithmique et POO\Probleme_Final_MIXMO_Louis_TEMPE\Mixmo\obj\Debug\Mixmo.csproj.CoreCompileInputs.cache
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A2\S3\Algorithmique et POO\Probleme_Final_MIXMO_Louis_TEMPE\Mixmo\obj\Debug\Mixmo.csproj.AssemblyReference.cache
