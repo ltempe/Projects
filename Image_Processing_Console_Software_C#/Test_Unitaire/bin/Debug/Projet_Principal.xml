@@ -1,0 +1,917 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Projet_Principal</name>
+    </assembly>
+    <members>
+        <member name="T:Traitement_Images.Complexe">
+            <summary>
+            Classe de nombres complexes, utile dans le projet pour créer des fractales, même s'il aurait été possible de s'en
+            passer en créant simplement 2 suites pour remplacer la partie "réelle" et "imaginaire", la classe m'a semblé intéressante
+            à creer.
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.Complexe.#ctor(System.Single,System.Single)">
+            <summary>
+            Crée un nombre complexe à partir de sa partie réelle et de sa partie imaginaire
+            </summary>
+            <param name="re">Partie réelle</param>
+            <param name="im">Partie imaginaire</param>
+        </member>
+        <member name="P:Traitement_Images.Complexe.Re">
+            <summary>
+            Partie réelle du complexe créé
+            </summary>
+        </member>
+        <member name="P:Traitement_Images.Complexe.Im">
+            <summary>
+            Partie imaginaire du complexe créé
+            </summary>
+        </member>
+        <member name="P:Traitement_Images.Complexe.Module">
+            <summary>
+            Module du complexe
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.Complexe.op_Addition(Traitement_Images.Complexe,Traitement_Images.Complexe)">
+            <summary>
+            Additionne deux complexes
+            </summary>
+            <param name="a">Complexe a</param>
+            <param name="b">Complexe b</param>
+            <returns>a + b</returns>
+        </member>
+        <member name="M:Traitement_Images.Complexe.op_Subtraction(Traitement_Images.Complexe,Traitement_Images.Complexe)">
+            <summary>
+            Soustrait deux complexes
+            </summary>
+            <param name="a">Complexe a</param>
+            <param name="b">Complexe b</param>
+            <returns>a - b</returns>
+        </member>
+        <member name="M:Traitement_Images.Complexe.op_Multiply(Traitement_Images.Complexe,Traitement_Images.Complexe)">
+            <summary>
+            Multiplie deux complexes
+            </summary>
+            <param name="a">Complexe a</param>
+            <param name="b">Complexe b</param>
+            <returns>a * b</returns>
+        </member>
+        <member name="M:Traitement_Images.Complexe.Egal(Traitement_Images.Complexe)">
+            <summary>
+            Vérifie qu'un complexe est égal à un autre
+            </summary>
+            <param name="z">Complexe z à vérifier</param>
+            <returns>true si les complexes sont égaux, false sinon</returns>
+        </member>
+        <member name="M:Traitement_Images.Complexe.ToString">
+            <summary>
+            Affiche l'instance de la classe Complexe
+            </summary>
+            <returns>x + yi</returns>
+        </member>
+        <member name="T:Traitement_Images.GenericGF">
+            <summary>
+              <p>This class contains utility methods for performing mathematical operations over
+            the Galois Fields. Operations use a given primitive polynomial in calculations.</p>
+              <p>Throughout this package, elements of the GF are represented as an {@code int}
+            for convenience and speed (but at the cost of memory).
+              </p>
+            </summary>
+            <author>Sean Owen</author>
+        </member>
+        <member name="M:Traitement_Images.GenericGF.#ctor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Create a representation of GF(size) using the given primitive polynomial.
+            </summary>
+            <param name="primitive">irreducible polynomial whose coefficients are represented by
+            *  the bits of an int, where the least-significant bit represents the constant
+            *  coefficient</param>
+            <param name="size">the size of the field</param>
+            <param name="genBase">the factor b in the generator polynomial can be 0- or 1-based
+            *  (g(x) = (x+a^b)(x+a^(b+1))...(x+a^(b+2t-1))).
+            *  In most cases it should be 1, but for QR code it is 0.</param>
+        </member>
+        <member name="M:Traitement_Images.GenericGF.BuildMonomial(System.Int32,System.Int32)">
+            <summary>
+            Builds the monomial.
+            </summary>
+            <param name="degree">The degree.</param>
+            <param name="coefficient">The coefficient.</param>
+            <returns>the monomial representing coefficient * x^degree</returns>
+        </member>
+        <member name="M:Traitement_Images.GenericGF.AddOrSubtract(System.Int32,System.Int32)">
+            <summary>
+            Implements both addition and subtraction -- they are the same in GF(size).
+            </summary>
+            <returns>sum/difference of a and b</returns>
+        </member>
+        <member name="M:Traitement_Images.GenericGF.Exp(System.Int32)">
+            <summary>
+            Exps the specified a.
+            </summary>
+            <returns>2 to the power of a in GF(size)</returns>
+        </member>
+        <member name="M:Traitement_Images.GenericGF.Log(System.Int32)">
+            <summary>
+            Logs the specified a.
+            </summary>
+            <param name="a">A.</param>
+            <returns>base 2 log of a in GF(size)</returns>
+        </member>
+        <member name="M:Traitement_Images.GenericGF.Inverse(System.Int32)">
+            <summary>
+            Inverses the specified a.
+            </summary>
+            <returns>multiplicative inverse of a</returns>
+        </member>
+        <member name="M:Traitement_Images.GenericGF.Multiply(System.Int32,System.Int32)">
+            <summary>
+            Multiplies the specified a with b.
+            </summary>
+            <param name="a">A.</param>
+            <param name="b">The b.</param>
+            <returns>product of a and b in GF(size)</returns>
+        </member>
+        <member name="P:Traitement_Images.GenericGF.Size">
+            <summary>
+            Gets the size.
+            </summary>
+        </member>
+        <member name="P:Traitement_Images.GenericGF.GeneratorBase">
+            <summary>
+            Gets the generator base.
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.GenericGF.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents this instance.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents this instance.
+            </returns>
+        </member>
+        <member name="T:Traitement_Images.GenericGFPoly">
+            <summary>
+            <p>Represents a polynomial whose coefficients are elements of a GF.
+            Instances of this class are immutable.</p>
+            <p>Much credit is due to William Rucklidge since portions of this code are an indirect
+            port of his C++ Reed-Solomon implementation.</p>
+            </summary>
+            <author>Sean Owen</author>
+        </member>
+        <member name="M:Traitement_Images.GenericGFPoly.#ctor(Traitement_Images.GenericGF,System.Int32[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Traitement_Images.GenericGFPoly"/> class.
+            </summary>
+            <param name="field">the {@link GenericGF} instance representing the field to use
+            to perform computations</param>
+            <param name="coefficients">coefficients as ints representing elements of GF(size), arranged
+            from most significant (highest-power term) coefficient to least significant</param>
+            <exception cref="T:System.ArgumentException">if argument is null or empty,
+            or if leading coefficient is 0 and this is not a
+            constant polynomial (that is, it is not the monomial "0")</exception>
+        </member>
+        <member name="P:Traitement_Images.GenericGFPoly.Degree">
+            <summary>
+            degree of this polynomial
+            </summary>
+        </member>
+        <member name="P:Traitement_Images.GenericGFPoly.IsZero">
+            <summary>
+            Gets a value indicating whether this <see cref="T:Traitement_Images.GenericGFPoly"/> is zero.
+            </summary>
+            <value>true iff this polynomial is the monomial "0"</value>
+        </member>
+        <member name="M:Traitement_Images.GenericGFPoly.GetCoefficient(System.Int32)">
+            <summary>
+            coefficient of x^degree term in this polynomial
+            </summary>
+            <param name="degree">The degree.</param>
+            <returns>coefficient of x^degree term in this polynomial</returns>
+        </member>
+        <member name="M:Traitement_Images.GenericGFPoly.EvaluateAt(System.Int32)">
+            <summary>
+            evaluation of this polynomial at a given point
+            </summary>
+            <param name="a">A.</param>
+            <returns>evaluation of this polynomial at a given point</returns>
+        </member>
+        <member name="T:Traitement_Images.MonImage">
+            <summary>
+            Classe principale, dans laquelle on traite les images
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.MonImage.#ctor(System.String)">
+            <summary>
+            Constructeur d'une instance de la classe MonImage à partir d'un fichier
+            </summary>
+            <param name="fichier">Fichier de l'image à instancier</param>
+        </member>
+        <member name="M:Traitement_Images.MonImage.#ctor(Traitement_Images.MonImage)">
+            <summary>
+            Constructeur par copie, pour cloner une instance de la classe
+            </summary>
+            <param name="img">Image à copier</param>
+        </member>
+        <member name="M:Traitement_Images.MonImage.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Crée une instance de la classe MonImage, au format bitmap, avec que des pixels blancs
+            </summary>
+            <param name="h">Hauteur de l'image créée</param>
+            <param name="l">Largeur de l'image créée</param>
+        </member>
+        <member name="P:Traitement_Images.MonImage.TypeImg">
+            <summary>
+            Attribut du type de l'image
+            </summary>
+        </member>
+        <member name="P:Traitement_Images.MonImage.TailleFichier">
+            <summary>
+            Attribut de la taille du fichier
+            </summary>
+        </member>
+        <member name="P:Traitement_Images.MonImage.Largeur">
+            <summary>
+            Attribut de la hauteur de l'image
+            </summary>
+        </member>
+        <member name="P:Traitement_Images.MonImage.Hauteur">
+            <summary>
+            Attribut de la largeur de l'image
+            </summary>
+        </member>
+        <member name="P:Traitement_Images.MonImage.NbBits">
+            <summary>
+            Attribut du nombre de bits par couleur
+            </summary>
+        </member>
+        <member name="P:Traitement_Images.MonImage.Nom">
+            <summary>
+            Nom de l'image, utile uniquement pour enregistrer l'image traitée
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.MonImage.EnregistrerImage(System.String)">
+            <summary>
+            Enregistre une instance de la classe dans un fichier image
+            </summary>
+            <param name="fichier">Chemin d'accès du fichier à enregistrer</param>
+        </member>
+        <member name="M:Traitement_Images.MonImage.ConvertirEndianEntier(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Convertit une séquence d'octets, au format little endian, en entier
+            </summary>
+            <param name="endian">Tableau d'octets dont on souhaite convertir une séquence</param>
+            <param name="debut">Début de la séquence à convertir</param>
+            <param name="fin">Fin de la séquence à convertir</param>
+            <returns>Entier correspondant à la séquence d'octets entrée</returns>
+        </member>
+        <member name="M:Traitement_Images.MonImage.ConvertirEntierEndian(System.Int32,System.Int32)">
+            <summary>
+            Convertit un entier en une séquence d'octets au format little endian
+            </summary>
+            <param name="entier">Entier à convertir</param>
+            <param name="taille">Taille de la séquence d'octets</param>
+            <returns>Séquence d'octets traduisant l'entier entré</returns>
+        </member>
+        <member name="M:Traitement_Images.MonImage.ConvertirOctetBinaire(System.Byte)">
+            <summary>
+            Code un octet sur 8 bits dans un tableau de booleens
+            </summary>
+            <param name="octet">Octet à coder</param>
+            <returns>Octet codé dans un tableau binaire</returns>
+        </member>
+        <member name="M:Traitement_Images.MonImage.ConvertirBinaireOctet(System.Boolean[])">
+            <summary>
+            Convertit un tableau binaire de 8 bits en octet
+            </summary>
+            <param name="binaire">Tableau à convertir</param>
+            <returns>Octet traduit</returns>
+        </member>
+        <member name="M:Traitement_Images.MonImage.RemplirTableauOctets(System.Byte[],System.Int32)">
+            <summary>
+            Rempit une séquence de cases d'un tableau d'octets par une séquence d'octets
+            </summary>
+            <param name="sequence">Séquence d'octets à implémenter</param>
+            <param name="indice">Position de l'emplacement de début dans le tableau</param>
+        </member>
+        <member name="M:Traitement_Images.MonImage.Pivoter180">
+            <summary>
+            Retourne l'image de 180 degrés
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.MonImage.Pivoter90Direct">
+            <summary>
+            Retourne l'image de 90 degrés dans le sens direct
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.MonImage.Pivoter90Horaire">
+            <summary>
+            Retourne l'image de 90 degrés dans le sens horaire
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.MonImage.Rotation(System.Int32)">
+            <summary>
+            Effectue une rotation de l'image selon un angle entré en paramètre, dans le sens direct
+            </summary>
+            <param name="angle">Angle de rotation en degrés</param>
+        </member>
+        <member name="M:Traitement_Images.MonImage.SymetrieVerticale">
+            <summary>
+            Fait une rotation selon l'axe vertical
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.MonImage.SymetrieHorizontale">
+            <summary>
+            Fait une rotation selon l'axe horizontal
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.MonImage.NuancesGris">
+            <summary>
+            Transforme une image en niveaux de gris
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.MonImage.NoirBlanc">
+            <summary>
+            Transforme une image couleur en noir et blanc
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.MonImage.Negatif">
+            <summary>
+            Inverse les couleurs d'une image
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.MonImage.ChangerTaille(System.Int32)">
+            <summary>
+            Change la taille de l'image en fonction du pourcentage entré en paramètre
+            </summary>
+            <param name="pourcentage">Inférieur à 100 : rétrécit l'image. Supérieur à 100 : agrandit l'image</param>
+        </member>
+        <member name="M:Traitement_Images.MonImage.SommePixels(System.Single[0:,0:],System.Int32,System.Int32)">
+            <summary>
+            Additionne les produits de tous les pixels voisins aux éléments du noyau entré en paramètre
+            </summary>
+            <param name="noyau">Noyeau de convolution</param>
+            <param name="ligne">Ligne du pixel sur lequel on travaille, dans la matrice de pixels</param>
+            <param name="colonne">Colonne du pixel sur lequel on travaille, dans la matrice de pixels</param>
+            <returns></returns>
+        </member>
+        <member name="M:Traitement_Images.MonImage.Convolution(System.Single[0:,0:])">
+            <summary>
+            Effectue une convolution sur l'image à partir d'un noyau de convolution entré en paramètre
+            </summary>
+            <param name="noyau">Noyau de convolution</param>
+        </member>
+        <member name="M:Traitement_Images.MonImage.Fractales(Traitement_Images.Complexe,System.Single,System.Single,System.Single,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Insère une fractale de julia dont la suite complexe est z(n+1) = z(n)²+c, avec c entré en paramètre
+            </summary>
+            <param name="c">Complexe que l'on additionne au carré de chaque élément du plan complexe pour obtenir la suite complexe</param>
+            <param name="zoom">Pourcentage de zoom de la fractale</param>
+            <param name="centreRe">Point central de l'image sur l'axe des réels</param>
+            <param name="centreIm">Point central de l'image sur l'axe des imaginaires</param>
+            <param name="max">Nombre maximal d'itération</param>
+        </member>
+        <member name="M:Traitement_Images.MonImage.Converge(Traitement_Images.Complexe,Traitement_Images.Complexe,System.Int32)">
+            <summary>
+            Vérifie si la suite complexez(n+1) = z(n)² + c converge après un nombre d'itérations
+            </summary>
+            <param name="z">Complexe z dans l'équation</param>
+            <param name="c">Complexe c dans l'équation</param>
+            <param name="max">Nombre max d'itérations</param>
+            <returns>Nombre d'itérations de l'équation avant que la suite ne diverge</returns>
+        </member>
+        <member name="M:Traitement_Images.MonImage.ColorerFractale(System.Byte,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Colorie un pixel d'une fractale selon le choix de l'utilisateur, en fonction des paramètres de la fractale et de ce point
+            Méthode purement esthétique
+            </summary>
+            <param name="intensite">Intensité de la couleur</param>
+            <param name="x">Point de la ligne de la matrice de pixels de l'image</param>
+            <param name="y">Point de la colonne de la matrice de pixels de l'image</param>
+            <param name="couleur">Choix de couleur entré par l'utilisateur</param>
+            <param name="n">Nombre d'itérations avant de sortir de la boucle while</param>
+            <param name="max">Nombre maximal d'itérations pour sortir de la boucle while</param>
+        </member>
+        <member name="M:Traitement_Images.MonImage.CacherImage(Traitement_Images.MonImage)">
+            <summary>
+            Cache une image dans une autre image
+            </summary>
+            <param name="img">Image à cacher</param>
+        </member>
+        <member name="M:Traitement_Images.MonImage.RecuperationImage">
+            <summary>
+            Récupère une image qui est cachée dans une autre
+            </summary>
+            <returns>Image récupérée</returns>
+        </member>
+        <member name="M:Traitement_Images.MonImage.CompterOccurrencesPixel(System.Byte,System.Char)">
+            <summary>
+            Compte le nombre d'occurrences d'une couleur de pixel dans une matrice de pixels
+            Plus utilisée maintenant car trop coûteuse en complexité temporelle, j'ai trouvé une autre solution
+            </summary>
+            <param name="intensite">Intensité de la couleur, allant de 0 à 255</param>
+            <param name="couleur">Couleur en question (R, V, ou B)</param>
+            <returns>Nombre d'occurrence de l'intensité de la couleur</returns>
+        </member>
+        <member name="M:Traitement_Images.MonImage.CalculerMax(System.Int32[])">
+            <summary>
+            Calcule la valeur maximale d'un tableau d'entiers
+            </summary>
+            <param name="tableau">Tableau d'entiers</param>
+            <returns>Valeur maximale de ce tableau</returns>
+        </member>
+        <member name="M:Traitement_Images.MonImage.Histogramme">
+            <summary>
+            Crée l'histogramme en couleurs superposées de l'instance de la classe MyImage, dans une nouvelle instance de cette classe
+            </summary>
+            <returns>Instance de la classe MyImage contenant l'histogramme au format bmp</returns>
+        </member>
+        <member name="M:Traitement_Images.MonImage.EstEgale(Traitement_Images.MonImage)">
+            <summary>
+            Vérifie qu'une instance de la classe est la même qu'une autre instance de la classe
+            </summary>
+            <param name="img">Image comparée</param>
+            <returns>Vérification : true si les images sont identiques, false sinon</returns>
+        </member>
+        <member name="M:Traitement_Images.MonImage.ToString">
+            <summary>
+            Méthode ToString
+            </summary>
+            <returns>Infos sur l'instance de la classe</returns>
+        </member>
+        <member name="T:Traitement_Images.Pixel">
+            <summary>
+            Classe de pixel, composé de 3 intensités de couleurs allant de 0 à 255, intensités de type byte
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.Pixel.#ctor(System.Byte,System.Byte,System.Byte)">
+            <summary>
+            Constructeur d'un pixel avec les 3 couleurs primaires
+            </summary>
+            <param name="r">Quantité de rouge entre 0 et 255</param>
+            <param name="v">Quatité de vert entre 0 et 255</param>
+            <param name="b">Quantité de bleu entre 0 et 255</param>
+        </member>
+        <member name="P:Traitement_Images.Pixel.R">
+            <summary>
+            Attribut de la quantité de rouge du pixel
+            </summary>
+        </member>
+        <member name="P:Traitement_Images.Pixel.V">
+            <summary>
+            Attribut de la quantité de vert du pixel
+            </summary>
+        </member>
+        <member name="P:Traitement_Images.Pixel.B">
+            <summary>
+            Attribut de la quantité de vert du pixel
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.Pixel.Somme">
+            <summary>
+            Calcule la somme des 3 pixels, utile pour certaines méthodes
+            </summary>
+            <returns>Somme des 3 pixels</returns>
+        </member>
+        <member name="M:Traitement_Images.Pixel.EstEgal(Traitement_Images.Pixel)">
+            <summary>
+            Vérifie que 2 pixels ont la même valeur
+            </summary>
+            <param name="pix">Pixel à vérifier</param>
+            <returns>Vérification</returns>
+        </member>
+        <member name="M:Traitement_Images.Pixel.ToString">
+            <summary>
+            Affiche la quantité de chaque couleur du pixel dans une chaîne de caractères
+            </summary>
+            <returns>Chaîne retournée</returns>
+        </member>
+        <member name="M:Traitement_Images.Program.Menu1">
+            <summary>
+            Menu principal du traitement des images
+            </summary>
+            <returns>Choix de l'application</returns>
+        </member>
+        <member name="M:Traitement_Images.Program.Menu2">
+            <summary>
+            Menu des applications de traitement d'image
+            </summary>
+            <returns>Numéro d'application choisie par l'utilisateur</returns>
+        </member>
+        <member name="M:Traitement_Images.Program.TraiterImages">
+            <summary>
+            Traitement des images
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.Program.RecupNom(System.String)">
+            <summary>
+            Récupère le nom d'un fichier, en enlevant le nom du dossier qui le contient ainsi que son format, pour l'afficher
+            en beau sur la console par la suite
+            </summary>
+            <param name="fichier">Chemin d'accès du fichier</param>
+            <returns>Nom du fichier</returns>
+        </member>
+        <member name="M:Traitement_Images.Program.AfficherDossier(System.String)">
+            <summary>
+            Affiche l'ensemble des noms des fichiers d'un dossier sur la Console
+            </summary>
+            <param name="nomDossier">Nom du dossier, chemin d'accès au dossier</param>
+        </member>
+        <member name="M:Traitement_Images.Program.InitialiserImage(System.String)">
+            <summary>
+            Méthode permettant à l'utilisateur de choisir une image parmi la bibliothèque d'images disponible en entrant le 
+            nom de l'image, et éventuellement de l'afficher, pour pouvoir la traiter par la suite
+            </summary>
+            <returns>Instance de la classe MonImage contenant toutes les informations de l'image choisie</returns>
+        </member>
+        <member name="M:Traitement_Images.Program.SauvegardeImage(System.String,System.String)">
+            <summary>
+            Permet à l'utilisateur d'enregistrer son image avec le nom qu'il souhaite, et éventuellement de l'afficher
+            </summary>
+            <param name="image">Instance de la classe MonImage à enregistrer et à afficher</param>
+        </member>
+        <member name="M:Traitement_Images.Program.ModifierImages">
+            <summary>
+            Méthode proposant plusieurs manipulations basiques à appliquer aux instances de la classe MonImage
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.Program.DiviserMatrice(System.Single[0:,0:],System.Int32)">
+            <summary>
+            Permet de diviser l'ensemble des éléments d'une matrice par un même nombre entré en paramètre, utile pour créer
+            certains noyaux de convolution
+            </summary>
+            <param name="noyau">Matrice dont on souhaite diviser chaque élément</param>
+            <param name="diviseur">Nombre par lequel on souhaite diviser les éléments</param>
+        </member>
+        <member name="M:Traitement_Images.Program.CreerNoyauConvolution">
+            <summary>
+            Méthode permettant à l'utilisateur de créer son propre noyau de convolution case par case
+            </summary>
+            <returns>Noyau de convolution</returns>
+        </member>
+        <member name="M:Traitement_Images.Program.AfficherMatrice(System.Single[0:,0:])">
+            <summary>
+            Permet d'afficher une matrice de réels sur la console avec un affichage simple
+            </summary>
+            <param name="matrice"></param>
+        </member>
+        <member name="M:Traitement_Images.Program.MatricesConvolution">
+            <summary>
+            Méthode permettant à l'utilisateur d'appliquer des noyaux de convolution sur des instances de la classe MonImage
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.Program.CreationFractales">
+            <summary>
+            Méthode permettant à l'utilisateur de créer des fractales, en choisissant le zoom, le centrage, les couleurs
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.Program.CacherImage">
+            <summary>
+            Méthode permettant à l'utilisateur de choisir une image à cacher dans une autre, et de retrouver cette image
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.Program.RecupImage">
+            <summary>
+            Récupère une image cachée dans une autre
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.Program.FaireHistogramme">
+            <summary>
+            Applique à une image la méthode de réalisation de son histogramme
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.Program.CreerQR">
+            <summary>
+            Crée un code QR
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.Program.DecoderQR">
+            <summary>
+            Récupère un QR Code créé au préalable et affiche toutes les données encodées
+            </summary>
+        </member>
+        <member name="T:Traitement_Images.QRCode">
+            <summary>
+            Classe de création de QR Code et de décodage
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.QRCode.#ctor(System.String,System.Char,System.Int32)">
+            <summary>
+            Constructeur du QR Code
+            </summary>
+            <param name="phrase">Phrase à coder</param>
+            <param name="niveauCorrection">Niveau de correction d'erreur du QR Code</param>
+        </member>
+        <member name="M:Traitement_Images.QRCode.#ctor(System.String)">
+            <summary>
+            Constructeur du QR Code, récupéré à partir d'une image Bitmap, que l'on souhaite décoder
+            </summary>
+            <param name="fichier">Nom du fichier Bitmap dans lequel se situe le QR Code</param>
+        </member>
+        <member name="P:Traitement_Images.QRCode.Code">
+            <summary>
+            Données encodées en binaire
+            </summary>
+        </member>
+        <member name="P:Traitement_Images.QRCode.Phrase">
+            <summary>
+            Phrase ou texte encodé
+            </summary>
+        </member>
+        <member name="P:Traitement_Images.QRCode.NiveauCorrection">
+            <summary>
+            Indicateur du niveau de correction appliqué au QR Code
+            </summary>
+        </member>
+        <member name="P:Traitement_Images.QRCode.Version">
+            <summary>
+            Version du QR Code
+            </summary>
+        </member>
+        <member name="P:Traitement_Images.QRCode.Img">
+            <summary>
+            Instance de la classe MonImage affichant le QR Code
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.QRCode.DeterminerVersion">
+            <summary>
+            Détermine la version du QR Code en fonction de la taille de la phrase, du niveau de correction, et des caractères de la phrase
+            (Alphanumérique ou UTF-8), et initialise les champs correspondant à la version.
+            Méthode longue utilisant beaucoup de conditions, mais simplifiée par rapport à ce que j'avais fait de base.
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.QRCode.PhraseVersBinaire">
+            <summary>
+            Convertit les données de la phrase dans un langage binaire, selon les caractères utilisés (Alphanumérique ou UTF-8)
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.QRCode.TerminaisonDonnees">
+            <summary>
+            Ajoute les terminaisons nécessaires à la fin du code
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.QRCode.EncoderErreurCorrection">
+            <summary>
+            Encode la correction de l'erreur à l'aide du code de Reed Solomon fourni 
+            J'ai enlevé la ligne de l'erreur associée à la condition ligne 94 du fichier ReedSolomonEncoder.cs qui posait problème lorsque le
+            nombre de données encodées étaient inférieur au nombre d'octets requis pour la correction d'erreur
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.QRCode.CodeBlocs">
+            <summary>
+            Réecriture du code en le séparant en plusieurs blocs pour les versions où c'est nécessaire de le faire
+            
+            Exemple : en supposant que les octets 0123456789ABCDEF doivent être séparés en 2 blocs
+            avec 0-->9 les données et ABC la 1ere correction d'erreur, DEF la 2e correction d'erreur
+            
+            On veut arriver au résultat suivant :
+            0516273849ADBECF
+            
+            Pour une division de 123456789ABCDEF en 3 blocs, on veut arriver à
+            147258369ACEBDF
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.QRCode.ImageQR">
+            <summary>
+            Retranscrit les données codées sur une matrice, puis sur une instance de la classe MonImage pour l'enregistrer dans une image bitmap
+            </summary>
+            <param name="fichier">Nom du fichier dans laquelle on souhaite enregistrer l'image du QR Code</param>
+        </member>
+        <member name="M:Traitement_Images.QRCode.InitialiserQR">
+            <summary>
+            Place dans la matrice les éléments (motifs, lignes) du QR Code sans prendre en compte les données encodées dans un premier temps
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.QRCode.CreerMasques">
+            <summary>
+            Initialise une matrice contenant les 32 masques possibles pour un QR Code (8 pour chaque niveau de correction
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.QRCode.AppliquerMasque(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Place un 0 ou un 1 à la cellule en [x,y] de la matrice, en fonction du masque à appliquer, et de x et de y
+            </summary>
+            <param name="x">Ligne de la matrice</param>
+            <param name="y">Colonne de la matrice</param>
+            <param name="pix">Pixel à placer, 0 ou 1</param>
+            <returns>0 ou 1 selon l'application du masque</returns>
+        </member>
+        <member name="M:Traitement_Images.QRCode.DeterminerMasque">
+            <summary>
+            Détermine le meilleur masque à appliquer, selon certains critères. On compte un certain nombre de "pénalités", et
+            le masque qui donne le moins de pénalités est le "meilleur" à appliquer
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.QRCode.CompterPenalite1">
+            <summary>
+            Premières pénalités à compter
+            Chaque fois qu'il y a plus de 5 cases pareilles, on compte des pénalités
+            </summary>
+            <returns>Compteur de pénalités</returns>
+        </member>
+        <member name="M:Traitement_Images.QRCode.CompterPenalite2">
+            <summary>
+            Deuxièmes pénalités à compter
+            Chaque fois que l'on constate un carré de 4 pixels identiques, on ajoute 3 pénalités
+            </summary>
+            <returns>Compteur de pénalités</returns>
+        </member>
+        <member name="M:Traitement_Images.QRCode.CompterPenalite3">
+            <summary>
+            Troisièmes pénalités à compter
+            Chaque fois que l'on observe une suite "10111010000", peu importe le sens et l'orientation,
+            c'est 40 pénalités que l'on ajoute
+            </summary>
+            <returns>Compteur de pénalités</returns>
+        </member>
+        <member name="M:Traitement_Images.QRCode.CompterPenalite4">
+            <summary>
+            Quatrièmes pénalités à appliquer, selon la quantité de pixels blancs par rapport aux noirs
+            </summary>
+            <returns>Compteur de pénalités</returns>
+        </member>
+        <member name="M:Traitement_Images.QRCode.CreerCarre(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Créer un carré de 0 ou de 1 selon la position entrée en paramètre, la taille, et la "couleur", 0 ou 1
+            </summary>
+            <param name="posX">Position de la ligne</param>
+            <param name="posY">Position de la colonne</param>
+            <param name="tailleCarre">Taille du carré</param>
+            <param name="couleur">0 ou 1</param>
+        </member>
+        <member name="M:Traitement_Images.QRCode.RemplirDonnees">
+            <summary>
+            Rempli la matrice des données restantes à mettre dans la matrice du QR Code, comprenant les données codées et le masque
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.QRCode.ConvertirImage">
+            <summary>
+            Convertit la matrice dans une image, instance de la classe MonImage
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.QRCode.ConvertirMatrice">
+            <summary>
+            Convertit l'image noire et blanc en matrice de 0 et de 1
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.QRCode.RecupererMasque">
+            <summary>
+            Récupère la valeur du masque appliqué au QR Code contenant notamment des infos sur le niveau de correction
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.QRCode.RecupererInfos">
+            <summary>
+            Récupère les informations utiles au décodage du QR Code, telles que la version, et les données d'encodage
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.QRCode.RemplacerRectangle(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Remplace les champs dans un rectangle de la matrice de 0 et de 1, par une autre valeur (100)
+            Permettra par la suite de récupérer uniquement les valeurs concernant les données de la phrase
+            </summary>
+            <param name="posX">Ligne du début du rectangle</param>
+            <param name="posY">Colonne du début du rectangle</param>
+            <param name="hauteur">Hauteur du rectangle</param>
+            <param name="largeur">Largeur du rectangle</param>
+        </member>
+        <member name="M:Traitement_Images.QRCode.EnleverMotifs">
+            <summary>
+            Enlève tout élément binaire de la matrice ne concernant pas l'encodage des données, à savoir les motifs et 
+            les éléments décrivant le masque
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.QRCode.RecupererCode">
+            <summary>
+            Récupère tout le code placé dans le QR Code
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.QRCode.CodeDansLordre">
+            <summary>
+            Pour certaines versions du QR Code, selon le niveau de correction, le code peut être divisé en plusieurs blocs.
+            Cette méthode réécrit le code en plaçant les blocs dans l'ordre
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.QRCode.RecupererCorrection">
+            <summary>
+            Récupère les données de correction d'erreur du code, et récupère le message complet, à l'aide du décodeur
+            de l'algorithme de Reed Solomon
+            </summary>
+            <returns>Vérifie que tout s'est bien effectué</returns>
+        </member>
+        <member name="M:Traitement_Images.QRCode.RecupererPhrase">
+            <summary>
+            Récupère la phrase codée
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.QRCode.ConvertirVersBinaire(System.Int32,System.Int32,System.String)">
+            <summary>
+            Convertit un nombre entier en une chaîne de caractères binaires, de façon récursive
+            </summary>
+            <param name="nombre">Nombre à traduire en base 2</param>
+            <param name="taille">Taille de la chaîne de caractères, par défaut 8</param>
+            <param name="binaire">Paramètre utile pour rappeler la fonction récursive</param>
+            <returns>Chaîne de caractère traduisant le nombre dans un langage binaire (base 2)</returns>
+        </member>
+        <member name="M:Traitement_Images.QRCode.ConvertirVersEntier(System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Convertit une chaîne de caractères binaire en un nombre entier, de façon récursive
+            </summary>
+            <param name="binaire">Chaîne de caractère traduisant un nombre dans un langage binaire (base 2)</param>
+            <param name="entier">Nombre traduit, paramètre utile pour rappeler la fonction récursive</param>
+            <param name="i">Numéro du caractère étudié sur la chaîne, paramètre utile pour rappeler la fonction récursive</param>
+            <param name="puissance">Puissance de 2, paramètre utile pour rappeler la fonction récursive</param>
+            <returns>Entier en base décimale, traduit de la base binaire</returns>
+        </member>
+        <member name="M:Traitement_Images.QRCode.CreerAlphaNumerique">
+            <summary>
+            Initialise les caractères alphanumériques dans une SortedList (Pas trouvé d'autres moyens d'obtenir cette iste)
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.QRCode.CodeAlphanum(System.String)">
+            <summary>
+            Vérifie si la phrase à coder est écrite en caractères alphanumériques
+            </summary>
+        </member>
+        <member name="M:Traitement_Images.QRCode.ToString">
+            <summary>
+            Méthode ToString
+            </summary>
+            <returns>Infos sur l'instance de la classe</returns>
+        </member>
+        <member name="M:Traitement_Images.ReedSolomonAlgorithm.Encode(System.Byte[],System.Int32,Traitement_Images.ErrorCorrectionCodeType)">
+            <summary>
+            Produces error correction codewords for a message using the Reed-Solomon algorithm.
+            </summary>
+            <param name="message">The message to compute the error correction codewords.</param>
+            <param name="eccCount">The number of error correction codewords desired.</param>
+            <param name="eccType">The type of Galois field to use to encode error correction codewords.</param>
+            <returns>Returns the computed error correction codewords.</returns>
+        </member>
+        <member name="M:Traitement_Images.ReedSolomonAlgorithm.Encode(System.Byte[],System.Int32)">
+            <summary>
+            Produces error correction codewords for a message using the Reed-Solomon algorithm.
+            </summary>
+            <param name="message">The message to compute the error correction codewords.</param>
+            <param name="eccCount">The number of error correction codewords desired.</param>
+            <returns>Returns the computed error correction codewords.</returns>
+        </member>
+        <member name="M:Traitement_Images.ReedSolomonAlgorithm.Decode(System.Byte[],System.Byte[],Traitement_Images.ErrorCorrectionCodeType)">
+            <summary>
+            Repairs a possibly broken message using the Reed-Solomon algorithm.
+            </summary>
+            <param name="message">The possibly broken message to repair.</param>
+            <param name="ecc">The available error correction codewords.</param>
+            <param name="eccType">The type of Galois field to use to decode message.</param>
+            <returns>Returns the repaired message, or null if it cannot be repaired.</returns>
+        </member>
+        <member name="M:Traitement_Images.ReedSolomonAlgorithm.Decode(System.Byte[],System.Byte[])">
+            <summary>
+            Repairs a possibly broken message using the Reed-Solomon algorithm.
+            </summary>
+            <param name="message">The possibly broken message to repair.</param>
+            <param name="ecc">The available error correction codewords.</param>
+            <returns>Returns the repaired message, or null if it cannot be repaired.</returns>
+        </member>
+        <member name="T:Traitement_Images.ReedSolomonDecoder">
+            <summary> <p>Implements Reed-Solomon decoding, as the name implies.</p>
+            
+            <p>The algorithm will not be explained here, but the following references were helpful
+            in creating this implementation:</p>
+            
+            <ul>
+            <li>Bruce Maggs.
+            <a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/project/pscico-guyb/realworld/www/rs_decode.ps">
+            "Decoding Reed-Solomon Codes"</a> (see discussion of Forney's Formula)</li>
+            <li>J.I. Hall. <a href="www.mth.msu.edu/~jhall/classes/codenotes/GRS.pdf">
+            "Chapter 5. Generalized Reed-Solomon Codes"</a>
+            (see discussion of Euclidean algorithm)</li>
+            </ul>
+            
+            <p>Much credit is due to William Rucklidge since portions of this code are an indirect
+            port of his C++ Reed-Solomon implementation.</p>
+            
+            </summary>
+            <author>Sean Owen</author>
+            <author>William Rucklidge</author>
+            <author>sanfordsquires</author>
+        </member>
+        <member name="M:Traitement_Images.ReedSolomonDecoder.Decode(System.Int32[],System.Int32)">
+            <summary>
+              <p>Decodes given set of received codewords, which include both data and error-correction
+            codewords. Really, this means it uses Reed-Solomon to detect and correct errors, in-place,
+            in the input.</p>
+            </summary>
+            <param name="received">data and error-correction codewords</param>
+            <param name="twoS">number of error-correction codewords available</param>
+            <returns>false: decoding fails</returns>
+        </member>
+        <member name="T:Traitement_Images.ReedSolomonEncoder">
+            <summary>
+            Implements Reed-Solomon encoding, as the name implies.
+            </summary>
+            <author>Sean Owen</author>
+            <author>William Rucklidge</author>
+        </member>
+    </members>
+</doc>

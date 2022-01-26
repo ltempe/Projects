@@ -1,0 +1,18 @@
+﻿<Window x:Class="Traitement_Images.Traiter"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Traitement_Images"
+        mc:Ignorable="d"
+        Title="Traiter" Height="320" Width="700">
+    <Grid>
+        <TextBlock Text="Traitement d'images" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Rockwell Extra Bold" FontSize="26" FontWeight="Bold"  />
+        <WrapPanel Margin="35">
+            <Button x:Name="modifier" Content="Modifier l'image" Height="60" Width="250" FontSize="22" Margin="25" Click="modifier_Click"/>
+            <Button x:Name="convolution" Content="Matrices de convolution" Height="60" Width="250" FontSize="22" Margin="25"/>
+            <Button x:Name="histogramme" Content="Afficher l'histogramme" Height="60" Width="250" FontSize="22" Margin="25"/>
+            <Button x:Name="cacher" Content="Cacher une image" Height="60" Width="250" FontSize="22" Margin="25"/>
+        </WrapPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,14 @@
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A2\S4\Projet info\TD2_Louis_TEMPE\Projet_Principal\bin\Debug\Projet_Principal.exe.config
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A2\S4\Projet info\TD2_Louis_TEMPE\Projet_Principal\bin\Debug\Projet_Principal.exe
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A2\S4\Projet info\TD2_Louis_TEMPE\Projet_Principal\bin\Debug\Projet_Principal.pdb
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A2\S4\Projet info\TD2_Louis_TEMPE\Projet_Principal\obj\Debug\Projet_Principal.csprojAssemblyReference.cache
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A2\S4\Projet info\TD2_Louis_TEMPE\Projet_Principal\obj\Debug\Projet_Principal.exe
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A2\S4\Projet info\TD2_Louis_TEMPE\Projet_Principal\obj\Debug\Projet_Principal.pdb
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A2\S4\Projet info\Image_Louis_TEMPE\Projet_Principal\bin\Debug\Projet_Principal.exe.config
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A2\S4\Projet info\Image_Louis_TEMPE\Projet_Principal\bin\Debug\Projet_Principal.exe
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A2\S4\Projet info\Image_Louis_TEMPE\Projet_Principal\bin\Debug\Projet_Principal.pdb
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A2\S4\Projet info\Image_Louis_TEMPE\Projet_Principal\obj\Debug\Projet_Principal.exe
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A2\S4\Projet info\Image_Louis_TEMPE\Projet_Principal\obj\Debug\Projet_Principal.pdb
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A2\S4\Projet info\Image_Louis_TEMPE\Projet_Principal\obj\Debug\Projet_Principal.csproj.CoreCompileInputs.cache
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A2\S4\Projet info\Image_Louis_TEMPE\Projet_Principal\bin\Debug\Projet_Principal.xml
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A2\S4\Projet info\Image_Louis_TEMPE\Projet_Principal\obj\Debug\Projet_Principal.csproj.AssemblyReference.cache
