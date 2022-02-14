@@ -1,0 +1,80 @@
+1
+18:00;30/01/2006;0601020304;0611223344;0624242424;2;True
+pizzas;reine;1;4 fromages;2
+boissons;limonade;2
+2
+13:30;05/09/2008;0601020305;0688445577;0612121212;2;True
+pizzas;caraibes;2
+boissons
+3
+12:00;13/10/2008;0601020304;0688445577;0610101010;2;False
+pizzas;margherita;2
+boissons;coca;0
+4
+11:30;16/10/2009;0601020306;0611223344;0624242424;2;True
+pizzas;vegetarienne;0;calzone;0;chevre miel;0
+boissons;eau minerale;2;jus de fruits;1
+5
+19:00;08/09/2010;0601020305;0688445577;0612121212;2;False
+pizzas;4 saisons;1;margherita;2
+boissons;coca;0;fanta;0
+6
+19:00;21/05/2011;0601020306;0655223344;0610101010;2;True
+pizzas;vegetarienne;1;4 fromages;2
+boissons
+7
+20:00;02/04/2014;0601020304;0655223344;0612121212;2;True
+pizzas;hawaienne;2;caraibes;1
+boissons;fanta;2
+8
+19:00;10/01/2021;0601020306;0611223344;0610101010;2;True
+pizzas;vegetarienne;1;chevre miel;0
+boissons;limonade;2;fanta;1
+9
+17:49;31/01/2021;0601020307;0655223344;0624242424;2;True
+pizzas;caraibes;1;napolitaine;2
+boissons;jus de fruits;1
+10
+17:30;01/02/2021;0601020307;0701455001;0632732021;2;True
+pizzas;hawaienne;2;caraibes;1
+boissons;coca;2;eau minerale;1
+11
+17:30;01/02/2021;0601020307;0611223344;0624242424;0;False
+pizzas;hawaienne;2
+boissons;coca;1
+12
+17:32;01/02/2021;0783162324;0655223344;0794815836;2;True
+pizzas;calzone;1
+boissons;eau minerale;2
+13
+17:33;01/02/2021;0733624831;0750450842;0732951392;2;True
+pizzas;napolitaine;1
+boissons;limonade;2;coca;1
+14
+19:00;01/02/2021;0601020307;0656385713;0612121212;2;True
+pizzas;margherita;0;4 fromages;0;4 saisons;0
+boissons;coca;2;fanta;2
+15
+18:30;01/02/2021;0621725695;0656385713;0716550661;2;True
+pizzas;margherita;0
+boissons
+16
+18:10;01/02/2021;0601020307;0656385713;0732951392;1;False
+pizzas;4 fromages;0
+boissons;coca;0
+17
+18:11;01/02/2021;0601020304;0750450842;0624242424;1;False
+pizzas;calzone;2;napolitaine;1
+boissons;limonade;1
+18
+18:22;01/02/2021;0601020305;0656385713;0732951392;2;True
+pizzas;4 fromages;2;4 saisons;1;4 saisons;1
+boissons
+19
+18:24;01/02/2021;0733624831;0750450842;0794815836;2;True
+pizzas;hawaienne;1
+boissons;fanta;0
+20
+18:25;01/02/2021;0733624831;0656385713;0732951392;2;True
+pizzas;margherita;2
+boissons;coca;1

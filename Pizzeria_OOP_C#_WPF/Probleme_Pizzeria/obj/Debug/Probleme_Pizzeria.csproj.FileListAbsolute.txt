@@ -1,0 +1,15 @@
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A3\S5\Algorithme et POO Avancee\Pizzeria_POO_Solution_Louis_TEMPE\Probleme_Pizzeria\bin\Debug\Probleme_Pizzeria.exe.config
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A3\S5\Algorithme et POO Avancee\Pizzeria_POO_Solution_Louis_TEMPE\Probleme_Pizzeria\bin\Debug\Probleme_Pizzeria.exe
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A3\S5\Algorithme et POO Avancee\Pizzeria_POO_Solution_Louis_TEMPE\Probleme_Pizzeria\bin\Debug\Probleme_Pizzeria.pdb
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A3\S5\Algorithme et POO Avancee\Pizzeria_POO_Solution_Louis_TEMPE\Probleme_Pizzeria\obj\Debug\Probleme_Pizzeria.csprojAssemblyReference.cache
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A3\S5\Algorithme et POO Avancee\Pizzeria_POO_Solution_Louis_TEMPE\Probleme_Pizzeria\obj\Debug\App.g.cs
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A3\S5\Algorithme et POO Avancee\Pizzeria_POO_Solution_Louis_TEMPE\Probleme_Pizzeria\obj\Debug\Probleme_Pizzeria_MarkupCompile.cache
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A3\S5\Algorithme et POO Avancee\Pizzeria_POO_Solution_Louis_TEMPE\Probleme_Pizzeria\obj\Debug\Probleme_Pizzeria_MarkupCompile.lref
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A3\S5\Algorithme et POO Avancee\Pizzeria_POO_Solution_Louis_TEMPE\Probleme_Pizzeria\obj\Debug\Probleme_Pizzeria.g.resources
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A3\S5\Algorithme et POO Avancee\Pizzeria_POO_Solution_Louis_TEMPE\Probleme_Pizzeria\obj\Debug\Probleme_Pizzeria.Properties.Resources.resources
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A3\S5\Algorithme et POO Avancee\Pizzeria_POO_Solution_Louis_TEMPE\Probleme_Pizzeria\obj\Debug\Probleme_Pizzeria.csproj.GenerateResource.cache
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A3\S5\Algorithme et POO Avancee\Pizzeria_POO_Solution_Louis_TEMPE\Probleme_Pizzeria\obj\Debug\Probleme_Pizzeria.csproj.CoreCompileInputs.cache
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A3\S5\Algorithme et POO Avancee\Pizzeria_POO_Solution_Louis_TEMPE\Probleme_Pizzeria\obj\Debug\Probleme_Pizzeria.exe
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A3\S5\Algorithme et POO Avancee\Pizzeria_POO_Solution_Louis_TEMPE\Probleme_Pizzeria\obj\Debug\Probleme_Pizzeria.pdb
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A3\S5\Algorithme et POO Avancee\Pizzeria_POO_Solution_Louis_TEMPE\Probleme_Pizzeria\obj\Debug\mainwindow.g.cs
+C:\Users\louis\OneDrive - De Vinci\Documents\Cours\A3\S5\Algorithme et POO Avancee\Pizzeria_POO_Solution_Louis_TEMPE\Probleme_Pizzeria\obj\Debug\mainwindow.baml
